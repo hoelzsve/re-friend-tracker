@@ -57,6 +57,14 @@ export class GuiModel {
                             "maxLength": 5000,
                         },
                         {
+                            "id": "group",
+                            "type": "autocomplete",
+                            "name": "Group",
+                            "url": "/group",
+                            "form": "GroupForm",
+                            "width": 2,
+                        },
+                        {
                             "type": "deleteButton",
                             "name": "Delete"
                         },
@@ -252,11 +260,11 @@ export class GuiModel {
                             }
                         },
                         {
-                            "type": "button",
-                            "icon": "fa-layer-group",
+                            "type": "list",
+                            "icon": "fa-weixin",
                             "color": "magenta",
                             "search": true,
-                            "url": "/groups",
+                            "url": "/group",
                             "form": {
                                 "form": "GroupForm"
                             }
