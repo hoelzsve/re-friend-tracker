@@ -97,6 +97,32 @@ export class GuiModel {
                     ]
                 },
                 {
+                    "id": "GroupForm",
+                    "title": "Group",
+                    "url": "/group",
+                    "formFieldList": [
+                        {
+                            "id": "name",
+                            "type": "text",
+                            "name": "GroupName",
+                            "width": 2,
+                            "required": true
+                        },
+                        {
+                            "type": "deleteButton",
+                            "name": "Delete"
+                        },
+                        {
+                            "type": "cancelButton",
+                            "name": "Cancel"
+                        },
+                        {
+                            "type": "okButton",
+                            "name": "Ok"
+                        }
+                    ]
+                },
+                {
                     "id": "AddActivityForm",
                     "title": "Activity",
                     "url": "/friend/:friendKey/activity",
@@ -150,7 +176,7 @@ export class GuiModel {
                             "name": "Groups",
                             "icon": "fa-layer-group",
                             "color": "magenta",
-                            "page": "locationspage",
+                            "page": "groupspage",
                         },
                     ]
                 },
@@ -205,6 +231,34 @@ export class GuiModel {
                             "url": "/location",
                             "form": {
                                 "form": "LocationForm"
+                            }
+                        },
+                    ]
+                },
+                {
+                    "id": "groupspage",
+                    "elementList": [
+                        {
+                            "type": "backbutton",
+                        },
+                        {
+                            "type": "newButton",
+                            "name": "NewGroup",
+                            "icon": "fa-weixin",
+                            "color": "magenta",
+                            "width": 1,
+                            "form": {
+                                "form": "GroupForm"
+                            }
+                        },
+                        {
+                            "type": "button",
+                            "icon": "fa-layer-group",
+                            "color": "magenta",
+                            "search": true,
+                            "url": "/groups",
+                            "form": {
+                                "form": "GroupForm"
                             }
                         },
                     ]
