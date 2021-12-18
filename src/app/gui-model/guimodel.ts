@@ -261,16 +261,15 @@ export class GuiModel {
                                 "form": "FriendForm"
                             }
                         },
-                     
                         {
                             "type": "list",
                             "icon": "fa-user",
                             "color": "blue",
                             "search": true,
                             "url": "/friend",
-                            "form": {
-                                "form": "infoFriendspage"
-                            }
+                            "page": "infoFriendspage",
+                                
+                        
                         },
                     ]
                 },
@@ -334,9 +333,9 @@ export class GuiModel {
                             "color": "blue",
                             "search": true,
                             "url": "/location",
-                            "form": {
-                                "form": "infoLocationpage"
-                            }
+                            "page": "infoLocationpage",
+
+                            
                         },
                     ]
                 },
@@ -403,8 +402,8 @@ export class GuiModel {
                         {
                             "type": "newButton",
                             "name": "NewActivity",
-                            "icon": "fa-running",
-                            "color": "red",
+                            "icon": "fa-calendar-alt",
+                            "color": "black",
                             "form": {
                                 "form": "ActivityForm"
                             }
@@ -429,15 +428,15 @@ export class GuiModel {
                         {
                             "type": "button",
                             "name": "EditActivity",
-                            "icon": "fa-running",
-                            "color": "black",
+                            "icon": "fa-layer-group",
+                            "color": "blue",
                             "form": {
                                 "form": "ActivityForm"
                             }
                         },
                         {
                             "type": "list",
-                            "icon": "fa-running",
+                            "icon": "fa-user",
                             "color": "blue",
                             "search": true,
                             "url": "/activity/:activityKey/friend ",
